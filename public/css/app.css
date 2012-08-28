@@ -1,0 +1,30 @@
+* {
+	font-family: helvetica, sans-serif;
+}
+
+.new_user {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.new_user label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 90px;
+	padding: 5px;
+}
+
+.new_user input[type=text] {
+	width: 200px;
+	margin: 4px;
+	padding: 2px;
+}
+
+.new_user input[type=submit] {
+	height: 35px;
+	width: 120px;
+	margin: 8px 55px;
+}
+

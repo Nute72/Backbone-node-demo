@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+	<title>Node.js / Backbone.js demo app</title>
+  <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div id="content">
+		</div>
+	</div>
+
+	<script type="text/template" id="tpl_users_list">
+		  <h2 class="centered">Users</h2>
+		          
+		  <ul class="users_list"></ul>
+
+		  <h2>New User</h2>
+		  <ul class="new_user">
+		      <li><label>Username: </label> <input type="text" class="new_user_username"></li>
+		      <li><label>Password: </label> <input class="new_user_password" type="text"></li>
+		      <li><input type="submit" class="new_user_submit" value="Create user"></li>
+		  </ul>
+		  <div class="error_message"></div>
+	</script>
+
+	<script type="text/template" id="tpl_user_summary">
+		  <span class="user_username">{{username}}</span>
+	</script>
+
+	<script type="text/template" id="tpl_user">
+		  <h2 class="centered">User - "{{username}}"</h2>
+	</script>
+
+	<script src="js/underscore.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/handlebars.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		  (function($) {
+		      $.app.bootstrap();
+		  })(jQuery);
+	</script>
+</body>
+</html>
+
